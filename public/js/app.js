@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e) => {
                 paraTwo.textContent = ''
             } else {
                 paraOne.textContent = data.location
-                paraTwo.textContent =  data.weatherInfo.weather_descriptions[0] + ': Its currently ' + data.weatherInfo.temperature + ' degrees out. But feels like ' + data.weatherInfo.feelslike + ' degrees out.'
+                paraTwo.textContent =  data.weatherInfo.weather_descriptions[0] + ': Its currently ' + data.weatherInfo.temperature + ' degrees out. But feels like ' + data.weatherInfo.feelslike + ' degrees out. And the humidity is ' + data.weatherInfo.humidity + '%.'
             }
         })
     })
